@@ -20,7 +20,7 @@
 						<p> School of Intelligent Systems Engineering<br>
 							Sun Yat-Sen University, <br>
 							Guangzhou, <br>
-							China.111 </p>
+							China. </p>
 
 						<p> Email: <a href="mailto:z-s-06@163.com">z-s-06@163.com</a> </p>
 						<p> Wechat: <a href="">yezi84414</a> </p>
@@ -90,7 +90,12 @@
 					<div id="upen" class="contents">
 						<h2>Upcoming Events </h2>
 						<ul>
+							<!-- 可以在ul后面加上style="padding-left: 140px;"，这样的话，文字会往右移动140px。-->
+							<!-- 可以在ul后面加上style="line-height: 10px;"，这样的话，列表中所有项目的行间距都会变成10px。-->
 							<li> I'm serving as a reviewer for MICCAI 2020.
+								<!-- 可以在li后面加上style="margin-top: -20px;"，这样的话，列表里的第一个会和上面的题目间距减小。
+								（如果是0，那就是原来大小，然后正数是变大，负数是变小）。而，列表中的两个项目之间间距不会变的。-->
+								<!-- 也可以在li后面加上style="line-height: 10px;"，这样的话，列表中当前项目的行间距会变成10px。-->
 							<li> My paper in MICCAI 2019 has been nominated for the Young Scientist Award and are invited to a special issue
 								in MEDIA (Top journal on Medical image analysis with Impact Factor: 8.88).
 								.
@@ -128,37 +133,68 @@
 						Codes for these papers will be uploaded to github in succession in the near future. Also, <b>I am very happy to
 							provide my codes in advance</b> if you are interested in my papers for academic use.
 
-						<p><a href="https://www.researchgate.net/profile/Shuo_Li4/publication/334566521_Automatic_Spondylolisthesis_Grading_from_MRIs_across_modalities_using_Faster_Adversarial_Recognition_Network/links/5d31bf20458515c11c3d92cd/Automatic-Spondylolisthesis-Grading-from-MRIs-across-modalities-using-Faster-Adversarial-Recognition-Network.pdf"
-							 target="_blank"><b> Automatic spondylolisthesis grading from MRIs across modalities using faster adversarial
-									recognition network. </b></a><br>
-							<b> Shen Zhao </b>, Xi Wu, Bo Chen, and Shuo Li. <br>
-							<em> Medical image analysis (MEDIA) 2019. </em>
-						</p>
-
 						<p><a href="https://www.researchgate.net/publication/336377656_Automatic_Vertebrae_Recognition_from_Arbitrary_Spine_MRI_Images_by_a_Hierarchical_Self-calibration_Detection_Framework?_sg=p4a2U4kT9P2eoPxw43bMRW7uEn-sVNhwUFnrsWQ3mM8sSAhh-dt2_-oviUwgLdhlzt5m8WKJg1hAjpH5akS90t74PBNHjSRzUbmRj1rK_9xoclNczIA#fullTextFileContent"
-							 target="_blank"><b> Automatic Vertebrae Recognition from Arbitrary Spine MRI Images by a Hierarchical
+							 target="_blank"><b> 【02】 Automatic Vertebrae Recognition from Arbitrary Spine MRI Images by a Hierarchical
 									Self-calibration Detection Framework. </b></a><br>
 							<b> Shen Zhao </b>, Xi Wu, Bo Chen, and Shuo Li. <br>
 							<em> Medical Image Computing and Computer Assisted Intervention (MICCAI) 2019. </em>
+							<img src="03-paper2-fig4.jpg" alt="The self-calibration recognition network (SRN)." style="width:900px;height:250px;"
+							 padding>
+							<ul>
+								<li style="margin-top: -20px;"> <b> Methodoloy innovations: </b> For the first time, message passing is
+									formulated into deep learning object recognition network for self-awareness and self-calibration of wrong
+									recognition results of an object detection network. <br>
+									This work could benefit other object recognition problems where the locations of the target objects have some
+									certain internal spatial relationships.
+								<li> <b> Advantages: </b> An efficient way of leveraging the label relationships of different recognized objects (vertebrae) for errors in object recognition networks. <br> 
+									An in-depth understanding of the two-stage object recognition networks.
+								<li> <b> Disadvantages: </b> Not found yet.
+							</ul>
+						</p>
+
+						<p><a href="https://www.researchgate.net/profile/Shuo_Li4/publication/334566521_Automatic_Spondylolisthesis_Grading_from_MRIs_across_modalities_using_Faster_Adversarial_Recognition_Network/links/5d31bf20458515c11c3d92cd/Automatic-Spondylolisthesis-Grading-from-MRIs-across-modalities-using-Faster-Adversarial-Recognition-Network.pdf"
+							 target="_blank"><b> 【01】 Automatic spondylolisthesis grading from MRIs across modalities using faster
+									adversarial
+									recognition network. </b></a><br>
+							<b> Shen Zhao </b>, Xi Wu, Bo Chen, and Shuo Li. <br>
+							<em> Medical image analysis (MEDIA) 2019. </em>
+							<img src="02-paper1-fig2.jpg" alt="The multi-task recognition-diagnosis network that recognizes critical vertebrae and diagnoses spondylolisthesis gradings in an adversarial manner."
+							 style="width:900px;height:400px;" padding>
+							<ul>
+								<li style="margin-top: -20px;"> This is the first paper that I use deep learning-based methods for medical
+									image analysis.
+								<li> <b> Methodoloy innovations: </b> A multi-task detection-diagnosis network has been constructed for
+									simultaneous human organ (vertebrae) recognition and disease (spondylolisthesis) diagnosis. <br>
+									Adversarial networks are attempted to be used in recognition networks. Hybrid supervision is introduced to
+									provide stronger supervision signals to the proceeding network.
+								<li> <b> Advantages: </b> Accurate recognition of critical vertebrae (which tends to suffer from
+									spondylolisthesis), and precise diagnosis of the disease.
+								<li> <b> Disadvantages: </b> As my research goes deeper, I find that the adversarial module and the auxiliary
+									path for gradient back-propagation may be substituted by more efficient methods.
+							</ul>
 						</p>
 
 						<p><a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=U68XZOgAAAAJ&view_op=list_works&sortby=pubdate"
-							 target="_blank"><b> Robust Segmentation of Intima-Media Borders with Different Morphologies and Dynamics During
+							 target="_blank"><b> 【00】 Robust Segmentation of Intima-Media Borders with Different Morphologies and Dynamics
+									During
 									the Cardiac Cycle. </b></a><br>
 							<b> Shen Zhao </b>, Zhifan Gao, Heye Zhang, Yaoqin Xie, et.al. <br>
-							<em> IEEE Journal of Biomedical and Health Informatics (JBHI) 2019. </em> <br>
+							<em> IEEE Journal of Biomedical and Health Informatics (JBHI) 2017. </em> <br>
 							<img src="01-paper0-fig3.jpg" alt="The adaptive snake algorithm for segmenting the IM borders of the next frame."
-							 style="width:800px;height:300px;">
+							 style="width:900px;height:300px;" padding>
+							<!-- 有点奇怪，不知道为什么宽度变成1000px，最上面的题目会往右跑。-->
 							<ul>
-								<li> This is the first paper after I entered medical image analysis domain!
-								<li> This paper provdes a robust method based on the snake algorithm (active contour model) for segmenting
-									carotid intima-media (IM) borders from ultrasound sequences.
-								<li> <b> Advantages: </b>it can overcome the challenges brought about by ultrasound noises,
-									large movements between frames, different IM appearances, and the existance of plagues.
-								<li> <b> Potential clinical usage: </b> it may be leveraged to diagnosis cardiovascular
-									diseases not only be the IMT but also by its changes during the cardiac cycle.
-								<li> <b> Disadvantages: </b> the snake parameters are still based on manual experience.
-								<li> Codes are available.
+								<li style="margin-top: -20px;"> This is the first paper after I entered medical image analysis domain!
+									<!-- 加上style="margin-top: -20px;"是为了让列表中第一个项目，和上面图中的间距减小一些。-->
+								<li> <b> Methodoloy innovations: </b> A robust grayscale-derivative constraint snake algorithm that avoids
+									sudden change of grayscale and derivative at IM border points between consecutive frames.
+								<li> <b> Advantages: </b> Fast and robust segmentation of IM borders in ultrasound sequences with noises,
+									large movements between frames, different IM appearances, and plagues.
+								<li> <b> Potential clinical usage: </b> Diagnosis of cardiovascular diseases not only by IMT but also by its
+									changes during the cardiac cycle.
+								<li> <b> Disadvantages: </b> Snake parameters are still based on manual experience.
+								<li> <a href="https://github.com/hnyz979/Open-Snakes-for-strip-like-object-segmentation#outputs--" target="_blank"><b>Codes
+											are available for this paper. </b></a>
 							</ul>
 						</p>
 
@@ -318,12 +354,10 @@
 				<td width="50%">
 					<div id="MOTTO" class="contents">
 						<h2>MOTTO</h2>
-						<li> "The academic is not an army race. It does not really matter how fancy the model is. It does not really
-							matter whether the model can achieve the stoa performance. The real innovation is to find something new and this
-							work has found a fresh new perspective." ——Anonymous Reviewer</a> </em> </p>
-						<li> " When nothing seems to help, I go and look at a stonecutter hammering away at his rock perhaps a hundred
-							times without as much as a crack showing in it. Yet at the hundred and first blow it will split in two, and I
-							know it was not that blow that did it -- but all that had gone before." ——Jacob Riis</a> </em> </p>
+						<li> "Constantly working hard with self-discipline, profoundly abiding morality with social commitment."
+							——Tsinghua University motto.</a> </em> </p>
+						<li> "Superior horses can hardly reach ten steps in one go, however, inferior horses can run a long way provided
+							they do not give up." ——Xun Zi, a paper for urging us to study.</a> </em> </p>
 							<!-- <p>
                 <script type="text/javascript">
                 onload = function(){
